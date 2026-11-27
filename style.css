@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f9;
+    color: #222;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.subtitle {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+button {
+    padding: 12px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.h-menu {
+    background-color: #1e293b;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.h-menu > ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.h-menu li {
+    position: relative;
+}
+
+.h-menu a {
+    display: block;
+    padding: 12px 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.h-menu a:hover {
+    background-color: #334155;
+}
+
+.h-menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #334155;
+    list-style: none;
+    min-width: 180px;
+    z-index: 10;
+}
+
+.h-menu li:hover > ul {
+    display: block;
+}
+
+.page-layout {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.v-menu {
+    width: 220px;
+    flex-shrink: 0;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.v-menu ul {
+    list-style: none;
+}
+
+.v-menu a {
+    display: block;
+    padding: 8px 12px;
+    color: #1e293b;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.v-menu a:hover {
+    background-color: #e2e8f0;
+}
+
+.v-menu ul ul {
+    padding-left: 16px;
+}
+
+.page-content {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
